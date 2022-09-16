@@ -2,16 +2,25 @@
 #include "main.h"
 
 /**
-*print_line - prints a straight line
-*@n: parameter
-*Return:returns nothing
+*more_numbers - prints numbers to 14
+*
+*Return: returns nothing
 */
 
-void print_line(int n)
+void more_numbers(void)
 {
-	while (n-- > 0)
+	int n1, n2;
+
+	for (n1 = 0; n1 < 10; n1++)
 	{
-		putchar('_');
+		for (n2 = 0; n2 <= 14; n2++)
+		{
+			if (n2 > 9)
+			{
+				putchar((n2 / 10) + '0');
+			}
+			putchar((n2 % 10) + '0');
+		}
+		putchar(10);
 	}
-	putchar('\n');
 }
