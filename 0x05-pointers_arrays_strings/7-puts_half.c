@@ -1,8 +1,9 @@
-
 #include main.h
 #include <string.h>
 
 /**
+* puts_half -> puts half
+* @str: string param
 *
 */
 void puts_half(char *str)
