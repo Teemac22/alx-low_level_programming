@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 /**
  * puts_half - function the prints half of a string, followed by a new line
@@ -30,3 +31,24 @@ void puts_half(char *str)
 		_putchar(str[k]);
 	}
 }	
+=======
+#include main.h
+#include <string.h>
+
+/**
+*
+*/
+void puts_half(char *str)
+{
+	int x, y;
+
+	x = strlen(str);
+	if (x % 2 == 1)
+		y = x / 2 + 1;
+	else 
+		y = x / 2;
+	for (i = y; i < x; i ++)
+		_putchar(str[i]);
+	_putchar('\n');
+}
+>>>>>>> Task 7
