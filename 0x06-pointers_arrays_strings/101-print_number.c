@@ -2,6 +2,7 @@
 /**                                                                                                                                   
 * print_number - Prints an integer                                                                                                  *@n: The integer to be printed
 *
+Return: 0
 */ 
 void print_number(int n)                                                                                                              
 {                                                                                                                                     
@@ -10,7 +11,8 @@ void print_number(int n)
         if (n < 0)                                                                                                                    
         {                                                                                                                             
                 _putchar('-');                                                                                                        
-                num = -num;                                                                                                           
+                num = -num;
+                n *= -1;
         }                                                                                                                             
                                                                                                                                       
         if ((num / 10) > 0)                                                                                                           
