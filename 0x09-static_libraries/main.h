@@ -1,13 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/*
- * File: main.h
- * Auth: sam tech (samuel birhanu)
- * desc: Header file containg the prototypes
- *
- */
-
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
